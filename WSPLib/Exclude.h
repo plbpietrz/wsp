@@ -1,12 +1,12 @@
 /* Exclude.h - Define variables to exclude selected header files.
-	For complete explanation, see Rector & Newcomer, Win32 Programming, pp 25ff. */
+    For complete explanation, see Rector & Newcomer, Win32 Programming, pp 25ff. */
 
 #define WIN32_LEAN_AND_MEAN 
-	/* This has the largest impact, halving the pch file size. */
+    /* This has the largest impact, halving the pch file size. */
 
 /* These definitions also reduce the pch and improve compiling time.
-	All the programs in the book will still compile with these definitions.
-	You can also eliminate, for example, security with #define NOSECURITY. */
+    All the programs in the book will still compile with these definitions.
+    You can also eliminate, for example, security with #define NOSECURITY. */
 #define NOATOM
 #define NOCLIPBOARD
 #define NOCOMM

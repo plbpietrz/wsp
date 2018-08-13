@@ -1,6 +1,6 @@
 /* support.h */
 /* Definitions of all symbolic constants and common
-	utility functions used throughout the example programs. */
+    utility functions used throughout the example programs. */
 
 /* Define the LIBSPEC modifier for function names and other imported/exported
  * symblols. This is only required when building for Win32; you wouldn't
@@ -107,11 +107,11 @@ BOOL ChangeFilePermissions (DWORD, LPTSTR, LPDWORD, LPDWORD);
  */
 
 #define delay_cpu(n)  {\
-	int i=0, j=0;\
-	/* Do some wasteful computations that will not be optimized to nothing */\
-	while (i < n) {\
-		j = (int)(i*i + (float)(2*j)/(float)(i+1));\
-		i++;\
-	}\
+    int i=0, j=0;\
+    /* Do some wasteful computations that will not be optimized to nothing */\
+    while (i < n) {\
+        j = (int)(i*i + (float)(2*j)/(float)(i+1));\
+        i++;\
+    }\
 }
 
