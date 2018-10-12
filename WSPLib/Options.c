@@ -3,7 +3,7 @@
 #include "Everything.h"
 #include <stdarg.h>
 
-DWORD Options (int argc, LPCTSTR argv [], LPCTSTR OptStr, ...)
+DWORD Options (INT argc, LPCTSTR argv [], LPCTSTR OptStr, ...)
 
 /* argv is the command line.
     The options, if any, start with a '-' in argv[1], argv[2], ...
