@@ -1,4 +1,5 @@
 /* Utility function to extract option flags from the command line.  */
+#pragma warning (disable: 4273)
 
 #include "Everything.h"
 #include <stdarg.h>

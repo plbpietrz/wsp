@@ -2,6 +2,7 @@
     ConsolePrompt
     PrintStrings
     PrintMsg */
+#pragma warning (disable: 4273)
 
 #include "Everything.h"
 #include <stdarg.h>	 									  

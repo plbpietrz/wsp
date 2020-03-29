@@ -1,8 +1,8 @@
 /* Process a string to turn it into a command line. */
-
+#pragma warning (disable: 4273)
 #include "Everything.h"
 
-VOID GetArgs (LPCTSTR Command, int *pArgc, LPTSTR argstr [])
+__declspec(dllexport) VOID GetArgs (LPCTSTR Command, int *pArgc, LPTSTR argstr [])
 {
     int i, icm = 0;
     DWORD ic = 0;

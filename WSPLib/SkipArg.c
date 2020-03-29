@@ -1,6 +1,7 @@
 /* SkipArg.c
     Position to the specified command line argument number 
     UPDATED January 21, 2011 to account for arguments in quotes and containing spaces */
+#pragma warning (disable: 4273)
 
 #include "Everything.h"
 
@@ -12,7 +13,7 @@
     Returns: A pointer within cLine, pointing to the first, non-white space, character in the argument
              NULL in case of error.
 */
-LPTSTR SkipArg(LPTSTR cLine, int argn, int argc, LPTSTR argv[])
+LPTSTR SkipArg(LPTSTR cLine, INT argn, INT argc, LPTSTR argv[])
 {
     LPTSTR pArg = cLine, cEnd = pArg + _tcslen(cLine);
     int iArg;

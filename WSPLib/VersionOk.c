@@ -1,4 +1,5 @@
 /* DllGetVersion function implementation */
+#pragma warning (disable: 4273)
 
 #include "Everything.h"
 

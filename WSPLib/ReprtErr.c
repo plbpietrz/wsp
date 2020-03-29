@@ -1,3 +1,5 @@
+#pragma warning (disable: 4273)
+
 #include "Everything.h"
 
 VOID ReportError (LPCTSTR userMessage, DWORD exitCode, BOOL printErrorMessage)
