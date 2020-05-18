@@ -1,10 +1,10 @@
 // pwd.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "../WSPLib/Everything.h"
+#include "Everything.h"
 
 #define DIRNAME_LEN (MAX_PATH + 2)
-INT _tmain(INT argc, LPTSTR *argv)
+INT _tmain(INT argc, LPTSTR argv[])
 {
     TCHAR pwdBuffer[DIRNAME_LEN];
     DWORD lenCurrDir;

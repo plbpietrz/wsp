@@ -17,7 +17,10 @@
 //#undef UNICODE
 
 #ifdef UNICODE
-#define _UNICODE
+#ifndef _UNICODE
+#define _UNICODE  
+#endif // !_UNICODE
+
 #endif
 #ifndef UNICODE
 #undef _UNICODE

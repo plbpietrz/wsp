@@ -28,7 +28,12 @@
 #define NOMEMMGR
 #define NOMENUS
 #define NOMETAFILE
+
+#ifndef NONOMSG
 #define NOMSG
+#endif // !1
+
+
 #define NONCMESSAGES
 #define NOPROFILER
 #define NORASTEROPS

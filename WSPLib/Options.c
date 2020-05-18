@@ -25,9 +25,10 @@ DWORD Options (INT argc, LPCTSTR argv [], LPCTSTR OptStr, ...)
     while ((pFlag = va_arg (pFlagList, LPBOOL)) != NULL
                 && iFlag < (int)_tcslen (OptStr)) {
         *pFlag = FALSE;
-        for (iArg = 1; !(*pFlag) && iArg < argc && argv [iArg] [0] == _T('-'); iArg++)
-            *pFlag = _memtchr (argv [iArg], OptStr [iFlag],
-                    _tcslen (argv [iArg])) != NULL;
+        for (iArg = 1; 
+            !(*pFlag) && iArg < argc && argv [iArg] [0] == _T('-'); 
+            iArg++)
+            *pFlag = _memtchr (argv [iArg], OptStr [iFlag], _tcslen (argv [iArg])) != NULL;
         iFlag++;
     }
 

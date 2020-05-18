@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <WSPLibDir>$(Solution)</WSPLibDir>
+    <WSPLibPCH>${WSPLibDir)</WSPLibPCH>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="WSPLibDir">
+      <Value>$(WSPLibDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WSPLibPCH">
+      <Value>$(WSPLibPCH)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
