@@ -1,7 +1,7 @@
 // timep.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "pch.h"
+#include "Everything.h"
 
 int _tmain(INT argc, LPTSTR argv[])
 {
@@ -30,8 +30,8 @@ int _tmain(INT argc, LPTSTR argv[])
         FileTimeToSystemTime(&userTime, &usTiSys);
         _tprintf(_T("\n"));
         _tprintf(_T("Real time: %02d:%02d:%02d:%03d\n"), elTiSys.wHour, elTiSys.wMinute, elTiSys.wSecond, elTiSys.wMilliseconds);
-        _tprintf(_T("User time: %02d:%02d:%02d:%03d\n"), keTiSys.wHour, keTiSys.wMinute, keTiSys.wSecond, keTiSys.wMilliseconds);
-        _tprintf(_T("Kernel time: %02d:%02d:%02d:%03d\n"), usTiSys.wHour, usTiSys.wMinute, usTiSys.wSecond, usTiSys.wMilliseconds);
+        _tprintf(_T("User time: %02d:%02d:%02d:%03d\n"), usTiSys.wHour, usTiSys.wMinute, usTiSys.wSecond, usTiSys.wMilliseconds);
+        _tprintf(_T("Krnl time: %02d:%02d:%02d:%03d\n"), keTiSys.wHour, keTiSys.wMinute, keTiSys.wSecond, keTiSys.wMilliseconds);
 
         CloseHandle(procInfo.hThread);
         CloseHandle(procInfo.hProcess);

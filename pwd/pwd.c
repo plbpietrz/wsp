@@ -9,7 +9,7 @@ INT _tmain(INT argc, LPTSTR argv[])
     TCHAR pwdBuffer[DIRNAME_LEN];
     DWORD lenCurrDir;
 
-    lenCurrDir = GetCurrentDirectory(DIRNAME_LEN, &pwdBuffer);
+    lenCurrDir = GetCurrentDirectory(DIRNAME_LEN, pwdBuffer);
     if (lenCurrDir == 0)
         ReportError(_T("Problem checking current directory"), 1, TRUE);
     if (lenCurrDir > DIRNAME_LEN)
